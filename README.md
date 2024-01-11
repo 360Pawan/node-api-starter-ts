@@ -1,4 +1,4 @@
-# Project Name
+# Node JS Starter
 
 Description of your project goes here.
 
@@ -36,14 +36,18 @@ Description of your project goes here.
 
 3. Install dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   cd your-project
+   ```
 
 4. Create a .env file in the project root and set the required environment variables. Refer to the .env.example file.
 
 5. Start the server:
 
    ```bash
-   npm start
+   npm run dev
    ```
+
+```
+
+```
