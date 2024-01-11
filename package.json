@@ -27,5 +27,8 @@
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "tscpaths": "^0.0.9"
+  },
+  "engines": {
+    "node": ">=18.18.0 <19.0.0"
   }
 }
