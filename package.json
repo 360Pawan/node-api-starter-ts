@@ -4,12 +4,11 @@
   "description": "",
   "main": "./dist/server.js",
   "scripts": {
-    "start": "nodemon",
     "dev": "nodemon -w lib -e ts --exec \"ts-node -r tsconfig-paths/register lib/server.ts\"",
     "prebuild:copy:temp": "copyfiles -u 1 lib/**/* temp",
     "prebuild": "npm run prebuild:copy:temp && tscpaths -p ./tsconfig.temp.json -s ./temp -o ./temp",
     "build": "tsc -p tsconfig.temp.json",
-    "start:prod": "node dist/server.js"
+    "start": "npm run build && node dist/server.js"
   },
   "author": "",
   "license": "ISC",
