@@ -8,7 +8,7 @@
     "prebuild:copy:temp": "copyfiles -u 1 lib/**/* temp",
     "prebuild": "npm run prebuild:copy:temp && tscpaths -p ./tsconfig.temp.json -s ./temp -o ./temp",
     "build": "npx tsc -p tsconfig.temp.json",
-    "start": "npm run build && node dist/server.js"
+    "start": "npm run prebuild && npm run build && node dist/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +29,6 @@
     "copyfiles": "^2.4.1"
   },
   "engines": {
-    "node": ">=18.18.0 <19.0.0"
+    "node": "20.10.0"
   }
 }
