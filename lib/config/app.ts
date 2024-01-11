@@ -1,7 +1,7 @@
+import mongoose from "mongoose";
+import * as dotenv from "dotenv";
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import * as mongoose from "mongoose";
-import * as dotenv from "dotenv";
 dotenv.config();
 
 import { EmployeeRoutes } from "@/routes/employee.routes";
