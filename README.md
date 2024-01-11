@@ -47,7 +47,3 @@ Description of your project goes here.
    ```bash
    npm run dev
    ```
-
-```
-
-```
