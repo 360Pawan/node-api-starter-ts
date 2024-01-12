@@ -7,8 +7,8 @@
     "dev": "nodemon -w lib -e ts --exec \"ts-node -r tsconfig-paths/register lib/server.ts\"",
     "prebuild:copy:temp": "copyfiles -u 1 lib/**/* temp",
     "prebuild": "npm run prebuild:copy:temp && tscpaths -p ./tsconfig.temp.json -s ./temp -o ./temp",
-    "build": "npx tsc -p tsconfig.temp.json",
-    "start": "npm run prebuild && npm run build && node dist/server.js"
+    "build": "npx tsc -p tsconfig.temp.json && rm -rf temp",
+    "start": "npm run build && node dist/server.js"
   },
   "author": "",
   "license": "ISC",
