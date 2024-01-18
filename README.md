@@ -1,7 +1,6 @@
 # Node JS Starter
 
-Description of your project goes here.
-
+Starter template for API in Express and Node with MongoDB in Typescript
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -25,19 +24,19 @@ Description of your project goes here.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/360pawan/younode-api-starter-ts.git
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd your-project
+   cd node-api-starter-ts
    ```
 
 3. Install dependencies:
 
    ```bash
-   cd your-project
+   npm i
    ```
 
 4. Create a .env file in the project root and set the required environment variables. Refer to the .env.example file.
